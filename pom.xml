@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.jamopp</groupId>
+    <artifactId>jamopp-refactoring</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <name>JaMoPP-Refactoring</name>
+    
+    <licenses>
+        <license>
+            <name>EPL</name>
+            <url>http://www.eclipse.org/legal/epl-v10.html</url>
+            <distribution>repo</distribution>
+            <comments>Eclipse Public License - v 1.0</comments>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>DevBoost GmbH, Berlin (Germany)</name>
+        <url>http://www.devboost.de/</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <id>jjohannes</id>
+            <name>Jendrik Johannes</name>
+            <timezone>+1</timezone>
+        </developer>
+        <developer>
+            <id>cwende</id>
+            <name>Christian Wende</name>
+            <timezone>+1</timezone>
+        </developer>
+        <developer>
+            <id>mirkoseifert</id>
+            <name>Mirko Seifert</name>
+            <timezone>+1</timezone>
+        </developer>
+        <developer>
+            <id>michael-schnell</id>
+            <name>Michael Schnell</name>
+            <timezone>+1</timezone>
+            <url>http://www.fuin.org/</url>
+            <organization>Future Invent Informationsmanagement GmbH, Hamburg (Germany)</organization>
+        </developer>
+    </developers>
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <tycho-version>0.15.0</tycho-version>
+    </properties>   
+
+    <dependencies>
+
+        <!-- compile -->
+
+        <dependency>
+            <groupId>org.emftext.language</groupId>
+            <artifactId>org.emftext.language.java</artifactId>
+            <version>1.4.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.emftext.language</groupId>
+            <artifactId>org.emftext.language.java.resource</artifactId>
+            <version>1.4.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.emftext.language</groupId>
+            <artifactId>org.emftext.language.java.resource.java</artifactId>
+            <version>1.4.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.emf</groupId>
+            <artifactId>org.eclipse.emf.ecore</artifactId>
+            <version>2.7.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.emftext.commons</groupId>
+            <artifactId>org.emftext.commons.antlr3_4_0</artifactId>
+            <version>3.4.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.emftext.language</groupId>
+            <artifactId>org.emftext.language.java.resource.bcel</artifactId>
+            <version>1.4.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.emftext.commons</groupId>
+            <artifactId>org.emftext.commons.layout</artifactId>
+            <version>1.4.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.emf</groupId>
+            <artifactId>org.eclipse.emf.ecore.change</artifactId>
+            <version>2.7.1</version>
+        </dependency>
+
+        <!-- test -->
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.10</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.easytesting</groupId>
+            <artifactId>fest-assert</artifactId>
+            <version>1.4</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.1.2</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.7</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <archive>
+                        <manifestFile>META-INF/MANIFEST.MF</manifestFile>
+                    </archive>
+                </configuration>
+
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+    <repositories>
+
+        <repository>        
+            <id>mvn.emftext.org</id>
+            <url>http://emftext.org/maven-repository/</url>
+        </repository>
+
+    </repositories>
+
+</project>
