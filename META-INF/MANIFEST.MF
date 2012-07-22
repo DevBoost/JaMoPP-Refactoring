@@ -1,16 +1,19 @@
-Built-By: jamopp
 Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: JaMoPP-Refactoring
-Bundle-SymbolicName: jamopp-refactoring
-Bundle-Version: 0.1.0.SNAPSHOT
-Bundle-Vendor: DevBoost GmbH, Berlin (Germany)
+Bnd-LastModified: 1342942833453
+Build-Jdk: 1.6.0_16
+Built-By: michael-schnell
+Bundle-ActivationPolicy: lazy
 Bundle-DocURL: http://www.devboost.de
 Bundle-License: http://www.eclipse.org/legal/epl-v10.html
+Bundle-ManifestVersion: 2
+Bundle-Name: JaMoPP-Refactoring
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Require-Bundle: org.eclipse.emf.ecore,
- org.emftext.language.java,
- org.emftext.language.java.resource,
- org.emftext.language.java.resource.java
+Bundle-SymbolicName: jamopp-refactoring
+Bundle-Vendor: DevBoost GmbH, Berlin (Germany)
+Bundle-Version: 0.1.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
 Export-Package: org.jamopp.refactoring
-Bundle-ActivationPolicy: lazy
+Originally-Created-By: Maven Integration for Eclipse
+Require-Bundle: org.eclipse.emf.ecore,org.emftext.language.java,org.emft
+ ext.language.java.resource,org.emftext.language.java.resource.java
+Tool: Bnd-1.50.0
