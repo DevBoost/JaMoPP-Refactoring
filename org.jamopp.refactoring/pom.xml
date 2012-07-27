@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.jamopp</groupId>
-    <artifactId>jamopp-refactoring</artifactId>
+    <artifactId>org.jamopp.refactoring</artifactId>
     <version>0.1.0-SNAPSHOT</version>
     <name>JaMoPP-Refactoring</name>
     

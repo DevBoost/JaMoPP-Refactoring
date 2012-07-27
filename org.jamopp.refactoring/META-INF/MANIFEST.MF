@@ -8,7 +8,7 @@ Bundle-License: http://www.eclipse.org/legal/epl-v10.html
 Bundle-ManifestVersion: 2
 Bundle-Name: JaMoPP-Refactoring
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Bundle-SymbolicName: jamopp-refactoring
+Bundle-SymbolicName: org.jamopp.refactoring
 Bundle-Vendor: DevBoost GmbH, Berlin (Germany)
 Bundle-Version: 0.1.0.SNAPSHOT
 Created-By: Apache Maven Bundle Plugin
